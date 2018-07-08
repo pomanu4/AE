@@ -1,0 +1,4 @@
+2018-07-08T11:58:49.281-> sample-1-evil-gemini.html ***origin-html[0]> body[1]> div[0]> div[1]> div[2]> div[0]> div[0]> div[1]>  ***similar-html[0]> body[1]> div[0]> div[1]> div[2]> div[0]> div[0]> div[1]> 
+2018-07-08T11:58:49.296-> sample-2-container-and-clone.html ***origin-html[0]> body[1]> div[0]> div[1]> div[2]> div[0]> div[0]> div[1]>  ***similar-html[0]> body[1]> div[0]> div[1]> div[2]> div[0]> div[0]> div[1]> div[0]> 
+2018-07-08T11:58:49.312-> sample-3-the-escape.html ***origin-html[0]> body[1]> div[0]> div[1]> div[2]> div[0]> div[0]> div[1]>  ***similar-html[0]> body[1]> div[0]> div[1]> div[2]> div[0]> div[0]> div[2]> 
+2018-07-08T11:58:49.312-> sample-4-the-mash.html ***origin-html[0]> body[1]> div[0]> div[1]> div[2]> div[0]> div[0]> div[1]>  ***similar-html[0]> body[1]> div[0]> div[1]> div[2]> div[0]> div[0]> div[2]> 

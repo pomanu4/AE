@@ -45,7 +45,7 @@ public class MainClass {
 
 	public static void executApp(String filePath) {
 		for (Element elem : findEqualElements(filePath)) {
-			String result = getOutput(elem);
+			String result = getOutput(elem, filePath);
 			writeResultToFile(result);
 			System.out.println(result);
 		}
@@ -112,7 +112,7 @@ public class MainClass {
 	}
 
 	private static String originElementDOMPath() {
-		String originPath = "";
+		String originPath = "origin-";
 		for (Element element : reverse(getOriginElement().parents())) {
 			originPath += element.nodeName() + "[" + element.elementSiblingIndex() + "]" + "> ";
 		}
@@ -120,7 +120,7 @@ public class MainClass {
 	}
 
 	private static String similsrElementDOMPath(Element element) {
-		String elementPath = "";
+		String elementPath = "similar-";
 		for (Element elem : reverse(element.parents())) {
 			elementPath += elem.nodeName() + "[" + elem.elementSiblingIndex() + "]" + "> ";
 		}
@@ -146,8 +146,8 @@ public class MainClass {
 		}
 	}
 
-	private static String getOutput(Element element) {
-		String outPut = platform + jarFilePath + " " + originElementDOMPath() + " " + similsrElementDOMPath(element);
+	private static String getOutput(Element element, String file) {
+		String outPut = file.substring(8, file.length()) +" ***" + originElementDOMPath() + " ***" + similsrElementDOMPath(element);
 		return outPut;
 	}
 
